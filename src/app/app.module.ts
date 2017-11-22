@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PlayerComponent } from './video/player/player.component';
 import { ManagerComponent } from './video/manager/manager.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './shared/material/material.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,9 @@ import { ManagerComponent } from './video/manager/manager.component';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
